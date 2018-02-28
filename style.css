@@ -15,44 +15,23 @@
 /****body styles ****/
 
 body {
-  margin: 0;
+  margin: 1rem;
   padding: 0;
   text-rendering: optimizeLegibility;
   font-family: 'Inter UI', sans-serif;
   background-color: #F6F6E9;
+  color:#194769;
 }
 
 /******HEADER SECTION*******/
 .header {
 }
 .header__title {
+  font-weight: 900;
+  letter-spacing: .05rem;
 }
 /******ABOUT SECTION*******/
 .about {
-}
-
-.about-card {
-	border: 1px solid blue;
-	width: 100vw;
-
-	display: flex;
-	flex-direction: column;
-
-	align-items: center;
-}
-
-.about-card > * {
-	border: 1px solid red;
-	padding: 20px;
-
-	width: 100%;
-}
-
-.about-card__header {
-	display: flex;
-	flex-direction: column;
-
-	align-items: center;
 }
 
 /******TEAM SECTION*******/
@@ -60,7 +39,9 @@ body {
 	border: 1px solid black;
 }
 
-.team-card {
+/******CARDS*******/
+
+.card {
 	border: 1px solid blue;
 	width: 100vw;
 
@@ -70,21 +51,56 @@ body {
 	align-items: center;
 }
 
-.team-card > * {
+.card > * {
 	border: 1px solid red;
 	padding: 20px;
 
 	width: 100%;
 }
 
-.team-card__header {
+.card__header {
 	display: flex;
 	flex-direction: column;
 
 	align-items: center;
 }
 
-.team-card__footer > ul {
+.card__name {
+  
+}
+
+.card__body {
+
+}
+
+.card__blurb {
+
+}
+
+.card__role {
+
+}
+
+.card__avatar {
+  
+}
+
+.card__social-media {
+
+}
+
+.card__footer {
+
+}
+
+.card > * {
+	border: 1px solid red;
+	padding: 20px;
+
+	width: 100%;
+}
+
+.card__footer > ul {
 	list-style-type: none;
 	padding-left: 0;
 
@@ -93,7 +109,9 @@ body {
 	justify-content: space-around;
 }
 
+.card__social-media {
 
+}
 
 /*****CONTACT SECTION********/
 .contact {
@@ -121,8 +139,21 @@ input:invalid {
 
 /**********GENERAL***********/
 .section__title {
+  font-weight: 900;
+  font-size: 2.1rem;
 }
+
+.section__title:before {
+  content: '';
+  width: 3.5rem;
+  height: .35rem;
+  margin-bottom: -.2rem;
+  background-color: #F2855E;
+  display: block;
+}
+
 .section__text {
+
 }
 
 .is-hidden {
