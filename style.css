@@ -33,8 +33,24 @@ body {
 .team {
 }
 /*****CONTACT SECTION********/
-/* Just checking by branch init worked! */
 .contact {
+
+}
+
+.contact__form {
+  border: 1px solid grey;
+}
+
+input:valid, textarea:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  background-color: 2px solid grey;
+}
+
+.contact__alt {
+
 }
 /******FOOTER SECTION*******/
 .footer {
@@ -44,4 +60,8 @@ body {
 .section__title {
 }
 .section__text {
+}
+
+.is-hidden {
+  display: none;
 }
