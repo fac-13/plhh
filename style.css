@@ -1,0 +1,46 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+/****RESET STYLE******/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/****body styles ****/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  font-family: 'Inter UI', sans-serif;
+}
+
+/******HEADER SECTION*******/
+.header {
+}
+.header__title {
+}
+/******ABOUT SECTION*******/
+.about {
+}
+/******TEAM SECTION*******/
+.team {
+}
+/*****CONTACT SECTION********/
+.contact {
+}
+/******FOOTER SECTION*******/
+.footer {
+}
+
+/**********GENERAL***********/
+.section__title {
+}
+.section__text {
+}
