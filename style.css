@@ -31,7 +31,44 @@ body {
 }
 /******TEAM SECTION*******/
 .team {
+	border: 1px solid black;
 }
+
+.team-card {
+	border: 1px solid blue;
+	width: 100vw;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+
+.team-card > * {
+	border: 1px solid red;
+	padding: 20px;
+
+	width: 100%;
+}
+
+.team-card__header {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+
+.team-card__footer > ul {
+	list-style-type: none;
+	padding-left: 0;
+
+	display: flex;
+
+	justify-content: space-around;
+}
+
+
+
 /*****CONTACT SECTION********/
 .contact {
 }
