@@ -170,24 +170,24 @@
         <h2 class="section__title">Contact</h2>
             
         <form action="https://formspree.io/your@email.com" class="contact__form" autocomplete="on" method="post">
-            <label for="firstname">First Name</label>
+            <label for="firstname" class="form__label">First Name</label>
             <br />
             <input name="First Name" id="firstname" type="text" placeholder="John"required/>
             <br />
-            <label for="lastname">Last Name</label>
+            <label for="lastname" class="form__label">Last Name</label>
             <br />
             <input id="lastname" name="Last Name" type="text" placeholder="Smith" required/>
             <br />
-            <label for="email">Email</label>
+            <label for="email" class="form__label">Email</label>
             <br />
             <input id="email" name="Email" type="email" placeholder="your@email.com" required/>
             <br />
-            <label for="message">Message</label>
+            <label for="message" class="form__label">Message</label>
             <br />
             <textarea id="message" name="Message" type="text" form="contact" placeholder="Your message" required></textarea>
             <br />
             <label for="submit" class="is-hidden">Submit</label>
-            <button id="submit" name="Submit" type="submit" />Submit
+            <button class="form__button" id="submit" name="Submit" type="submit" />Submit
             </button>
         </form>
 
