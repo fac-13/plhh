@@ -166,7 +166,35 @@
     </section>
 
     <section aria-label="contact" id="contact" class="contact">
-        <h2 class="section__title">CONTACT</h2>
+
+        <h2 class="section__title">Contact</h2>
+            
+        <form action="https://formspree.io/your@email.com" class="contact__form" autocomplete="on" method="post">
+            <label for="firstname">First Name</label>
+            <br />
+            <input name="First Name" id="firstname" type="text" placeholder="John"required/>
+            <br />
+            <label for="lastname">Last Name</label>
+            <br />
+            <input id="lastname" name="Last Name" type="text" placeholder="Smith" required/>
+            <br />
+            <label for="email">Email</label>
+            <br />
+            <input id="email" name="Email" type="email" placeholder="your@email.com" required/>
+            <br />
+            <label for="message">Message</label>
+            <br />
+            <textarea id="message" name="Message" type="text" form="contact" placeholder="Your message" required></textarea>
+            <br />
+            <label for="submit" class="is-hidden">Submit</label>
+            <button id="submit" name="Submit" type="submit" />Submit
+            </button>
+        </form>
+
+        <div class="section__text">
+             Prefer email? Shoot us <a href="mailto:hello@plhh.com?subject=Enquiry&body=First name:%0D%0ALast name:%0D%0AYour email address:%0D%0AMessage:">an email (hello@plhh.com)</a> instead and include your first name, last name, message and your email address :)
+        </div>
+
     </section>
 
     <footer aria-label="footer" id="footer" class="footer">
