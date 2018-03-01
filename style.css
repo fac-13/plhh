@@ -1,129 +1,205 @@
-@import url('https://rsms.me/inter/inter-ui.css');
-
+@import url("https://rsms.me/inter/inter-ui.css");
 /****RESET STYLE******/
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
+
 /****body styles ****/
 
 body {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
-  font-family: 'Inter UI', sans-serif;
+  font-family: "Inter UI", sans-serif;
 }
 
 /******HEADER SECTION*******/
-.header {
-}
-.header__title {
-}
-/******ABOUT SECTION*******/
-.about {
-}
 
-.about-card {
-	border: 1px solid blue;
-	width: 100vw;
-
-	display: flex;
-	flex-direction: column;
-
-	align-items: center;
-}
-
-.about-card > * {
-	border: 1px solid red;
-	padding: 20px;
-
-	width: 100%;
-}
-
-.about-card__header {
-	display: flex;
-	flex-direction: column;
-
-	align-items: center;
-}
-
-/******TEAM SECTION*******/
-.team {
-	border: 1px solid black;
-}
-
-.team-card {
-	border: 1px solid blue;
-	width: 100vw;
-
-	display: flex;
-	flex-direction: column;
-
-	align-items: center;
-}
-
-.team-card > * {
-	border: 1px solid red;
-	padding: 20px;
-
-	width: 100%;
-}
-
-.team-card__header {
-	display: flex;
-	flex-direction: column;
-
-	align-items: center;
-}
-
-.team-card__footer > ul {
-	list-style-type: none;
-	padding-left: 0;
-
-	display: flex;
-
-	justify-content: space-around;
-}
-
-
-
-/*****CONTACT SECTION********/
-.contact {
-
-}
-
-.contact__form {
-  border: 1px solid grey;
-}
-
-input:valid, textarea:valid {
-  border: 1px solid green;
-}
-
-input:invalid {
-  background-color: 2px solid grey;
-}
-
-.contact__alt {
-
-}
-/******FOOTER SECTION*******/
-.footer {
-}
-
-/**********GENERAL***********/
-.section__title {
-}
-.section__text {
-}
-
-.is-hidden {
+.header__list {
   display: none;
 }
+.header__hamburger input[type="checkbox"]:checked~.header__list {
+  display: block;
+}
+input[type=checkbox] {
+  display :none;
+}
+input[type=checkbox] + label::before { 
+  content: url(/assets/menu.svg);
+}
+input[type=checkbox]:checked + label {
+  content: url(/assets/x.svg);
+}
+
+
+/*
+.header__list--is-active {
+  background-color: #194769;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+}*/
+/*
+.header__item {
+  color: #F6F6E9;
+  font-size: 2rem;
+  font-weight: 700;
+  
+}
+.header {}
+/*
+.header__title {
+  font-weight: 900;
+  letter-spacing: .05rem;
+}
+/*
+body {
+  background: #000;
+}
+
+.header__hamburger {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 2%;
+  top: 2%;
+}
+/*
+.header__hamburger input[type="checkbox"] {
+  position: absolute;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.header__item {
+
+}
+/*
+.header__hamburger input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.header__hamburger input[type="checkbox"]:checked~.top, .header__hamburger input[type="checkbox"]:checked~.bottom {
+  top: 50%;
+}
+
+.header__hamburger input[type="checkbox"]:checked~.top {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.header__hamburger input[type="checkbox"]:checked~.bottom {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.header__hamburger input[type="checkbox"]:not(:checked)~.header__list {
+  display: none;
+}
+.header__hamburger input[type="checkbox"]:checked~.middle {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.header__hamburger input[type="checkbox"]:checked~.header__list {
+  width: 200px;
+  left: -100px;
+}
+.header__hamburger .header__list {
+  width: 0;
+  display: block;
+  /*display: none;*//*
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 500px;
+}
+.header__hamburger span {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.header__hamburger .top {
+  top: 15%;
+}
+
+.header__hamburger .middle {
+  top: 50%;
+}
+
+.header__hamburger .bottom {
+  top: 85%;
+}*/
+
+/*
+.header__hamburger .circle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: alpha(opacity=0);
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: -1;
+}*/
+
+/******ABOUT SECTION*******/
+
+.about {}
+
+/******TEAM SECTION*******/
+
+.team {}
+
+/*****CONTACT SECTION********/
+
+.contact {}
+
+/******FOOTER SECTION*******/
+
+.footer {}
+
+/**********GENERAL***********/
+
+.section__title {}
+
+.section__text {}
