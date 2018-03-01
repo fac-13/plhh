@@ -10,7 +10,6 @@
     <meta author="Parissa Lawrence Helen Haydn" />
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,26 +21,29 @@
         <nav class="header__nav">
 
             <div class="header__hamburger">
-                <input type="checkbox">
+                <input type="checkbox" id="menu-check">
+                <label for="menu-check"></label>
+                <!--
                 <span class="top"></span>
                 <span class="middle"></span>
-                <span class="bottom"></span>
-            </div>
+                <span class="bottom"></span>-->
 
-            <ul class="header__list">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#team">team</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="#footer">Footer</a>
-                </li>
-            </ul>
+
+                <ul class="header__list">
+                    <li>
+                        <a href="#about" class="header__item">About</a>
+                    </li>
+                    <li>
+                        <a href="#team" class="header__item">team</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="header__item">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#footer" class="header__item">Footer</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
     </header>
@@ -58,7 +60,9 @@
                 <h2 class="about-card__name">Accessible</h2>
             </header>
             <main aria-label="about_Card_Body" class="about-card__body">
-                <p class="about-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="about-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
             </main>
         </article>
 
@@ -70,7 +74,9 @@
                 <h2 class="about-card__name">Fast</h2>
             </header>
             <main aria-label="about_Card_Body" class="about-card__body">
-                <p class="about-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="about-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
             </main>
         </article>
 
@@ -82,7 +88,9 @@
                 <h2 class="about-card__name">Secure</h2>
             </header>
             <main aria-label="about_Card_Body" class="about-card__body">
-                <p class="about-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="about-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
             </main>
         </article>
 
@@ -94,7 +102,9 @@
                 <h2 class="about-card__name">Community</h2>
             </header>
             <main aria-label="about_Card_Body" class="about-card__body">
-                <p class="about-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="about-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
             </main>
         </article>
 
@@ -114,13 +124,27 @@
             </header>
             <main aria-label="" id="" class="team-card__body">
                 <h2 aria-label="" id="" class="team-card__role">Lead Developer</h2>
-                <p aria-label="" id="" class="team-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p aria-label="" id="" class="team-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
             </main>
             <footer aria-label="" id="" class="team-card__footer">
                 <ul aria-label="" id="" class="team-card__social-media">
-                    <li><a href=""><i class="fab fa-github fa-4x"></i></a></li>
-                    <li><a href=""><i class="fab fa-free-code-camp fa-4x"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin fa-4x"></i></a></li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-github fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-free-code-camp fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </li>
                 </ul>
             </footer>
         </article>
@@ -135,14 +159,28 @@
 
             <main aria-label="" id="" class="team-card__body">
                 <h2 aria-label="" id="" class="team-card__role">Lead Developer</h2>
-                <p aria-label="" id="" class="team-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p aria-label="" id="" class="team-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
             </main>
 
             <footer aria-label="" id="" class="team-card__footer">
                 <ul aria-label="" id="" class="team-card__social-media">
-                    <li><a href=""><i class="fab fa-github fa-4x"></i></a></li>
-                    <li><a href=""><i class="fab fa-free-code-camp fa-4x"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin fa-4x"></i></a></li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-github fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-free-code-camp fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </li>
                 </ul>
             </footer>
         </article>
@@ -157,14 +195,28 @@
 
             <main aria-label="" id="" class="team-card__body">
                 <h2 aria-label="" id="" class="team-card__role">Lead Developer</h2>
-                <p aria-label="" id="" class="team-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p aria-label="" id="" class="team-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
             </main>
 
             <footer aria-label="" id="" class="team-card__footer">
                 <ul aria-label="" id="" class="team-card__social-media">
-                    <li><a href=""><i class="fab fa-github fa-4x"></i></a></li>
-                    <li><a href=""><i class="fab fa-free-code-camp fa-4x"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin fa-4x"></i></a></li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-github fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-free-code-camp fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </li>
                 </ul>
             </footer>
         </article>
@@ -179,14 +231,28 @@
 
             <main aria-label="" id="" class="team-card__body">
                 <h2 aria-label="" id="" class="team-card__role">Lead Developer</h2>
-                <p aria-label="" id="" class="team-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p aria-label="" id="" class="team-card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
             </main>
 
             <footer aria-label="" id="" class="team-card__footer">
                 <ul aria-label="" id="" class="team-card__social-media">
-                    <li><a href=""><i class="fab fa-github fa-4x"></i></a></li>
-                    <li><a href=""><i class="fab fa-free-code-camp fa-4x"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin fa-4x"></i></a></li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-github fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-free-code-camp fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </li>
                 </ul>
             </footer>
         </article>
@@ -196,11 +262,11 @@
     <section aria-label="contact" id="contact" class="contact">
 
         <h2 class="section__title">Contact</h2>
-            
+
         <form action="https://formspree.io/your@email.com" class="contact__form" autocomplete="on" method="post">
             <label for="firstname">First Name</label>
             <br />
-            <input name="First Name" id="firstname" type="text" placeholder="John"required/>
+            <input name="First Name" id="firstname" type="text" placeholder="John" required/>
             <br />
             <label for="lastname">Last Name</label>
             <br />
@@ -220,7 +286,9 @@
         </form>
 
         <div class="section__text">
-             Prefer email? Shoot us <a href="mailto:hello@plhh.com?subject=Enquiry&body=First name:%0D%0ALast name:%0D%0AYour email address:%0D%0AMessage:">an email (hello@plhh.com)</a> instead and include your first name, last name, message and your email address :)
+            Prefer email? Shoot us
+            <a href="mailto:hello@plhh.com?subject=Enquiry&body=First name:%0D%0ALast name:%0D%0AYour email address:%0D%0AMessage:">an email (hello@plhh.com)</a> instead and include your first name, last name, message and your email address
+            :)
         </div>
 
     </section>
