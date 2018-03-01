@@ -27,9 +27,8 @@ body {
 /******HEADER SECTION*******/
 
 .header__title {
-	font-size: 4em;
-	letter-spacing: 0.15em;
-
+  font-size: 4em;
+  letter-spacing: 0.15em;
 }
 
 .header__list {
@@ -42,14 +41,15 @@ body {
   list-style-type: none;
 }
 .header__list a {
-	text-decoration: none;
-	letter-spacing: 0.13em;
-	color:#F6F6E9;
-    font-size: 2em;
-/*    font-weight: normal;
-*/}
+  text-decoration: none;
+  letter-spacing: 0.13em;
+  color: #f6f6e9;
+  font-size: 2em;
+  /*    font-weight: normal;
+*/
+}
 .header__list li {
-	padding: 10px;
+  padding: 10px;
 }
 .header__hamburger input[type="checkbox"]:checked ~ .header__list {
   display: block;
@@ -57,11 +57,14 @@ body {
 input[type="checkbox"] {
   display: none;
 }
-input[type=checkbox] + label { 
+input[type="checkbox"] + label {
   content: url(assets/menu.svg);
   height: 50px;
+  position: absolute;
+  right: 5%;
+  top: 9.5%;
 }
-input[type=checkbox]:checked + label {
+input[type="checkbox"]:checked + label {
   content: url(assets/x.svg);
   height: 50px;
 }
@@ -74,33 +77,37 @@ input[type=checkbox]:checked + label {
 }
 
 @media screen and (min-width: 600px) {
-
-
-	.header {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-	}
-	.header__list {
-		display: flex;
-		justify-content: space-around;
-		background-color: #F6F6E9;
-		margin: 0;
-	}
-	.header__list li {
-		display: inline;
-	}
-	.header__list a {
-		color: #194769;
-	}
-	input[type=checkbox] + label { 
-	  display:none;
-	}
-
-
+  .header__title {
+    margin: 0;
+  }
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6e9;
+    margin: 0;
+    padding: 0;
+  }
+  .header__list li {
+    display: inline;
+    padding-bottom: 5px;
+  }
+  .header__list a {
+    color: #194769;
+  }
+  input[type="checkbox"] + label {
+    display: none;
+  }
 }
-
-
+@media screen and (min-width: 950px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header__list li {
+    margin-left: 35px;
+  }
+}
 
 /******ABOUT SECTION*******/
 .about {
