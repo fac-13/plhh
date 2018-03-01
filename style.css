@@ -30,6 +30,14 @@ body {
   font-weight: 900;
   letter-spacing: .05rem;
 }
+
+.header__item {
+  color: #F6F6E9;
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
 /******ABOUT SECTION*******/
 .about {
 }
@@ -42,7 +50,6 @@ body {
 /******CARDS*******/
 
 .card {
-	border: 1px solid blue;
 	width: 100vw;
 
 	display: flex;
@@ -52,7 +59,6 @@ body {
 }
 
 .card > * {
-	border: 1px solid red;
 	padding: 20px;
 
 	width: 100%;
@@ -119,7 +125,7 @@ body {
 }
 
 .contact__form {
-  border: 1px solid grey;
+
 }
 
 input:valid, textarea:valid {
@@ -133,6 +139,48 @@ input:invalid {
 .contact__alt {
 
 }
+
+input, textarea {
+  background-color: #D7EEF2;
+  vertical-align:middle;
+  white-space:normal;
+  line-height: 1;
+  margin:0;
+	border:0;
+	padding:0;
+  display:inline-block;
+  
+  padding: 1rem;
+  width: 100%;
+  margin: .4rem 0 .8rem;
+}
+
+:focus {
+  
+}
+
+::placeholder  {
+  font-family: 'Inter UI', sans-serif;
+  font-size: .8rem;
+  color: rgba(25,71,105, 0.5);
+}
+
+.form__label {
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.form__button {
+  background-color: #194769;
+  border: none;
+  width: 100%;
+  padding: .5rem 0;
+  font-family: 'Inter UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #D7EEF2;
+}
+
 /******FOOTER SECTION*******/
 .footer {
 }
@@ -158,4 +206,9 @@ input:invalid {
 
 .is-hidden {
   display: none;
+}
+
+a {
+  color: #F2855E;
+  font-weight: 700;
 }
