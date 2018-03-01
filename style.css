@@ -1,17 +1,16 @@
-@import url('https://rsms.me/inter/inter-ui.css');
-
+@import url("https://rsms.me/inter/inter-ui.css");
 /****RESET STYLE******/
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
+
 /****body styles ****/
 
 body {
@@ -24,19 +23,24 @@ body {
 }
 
 /******HEADER SECTION*******/
-.header {
+
+.header__list {
+  display: none;
 }
-.header__title {
-  font-weight: 900;
-  letter-spacing: .05rem;
+.header__hamburger input[type="checkbox"]:checked~.header__list {
+  display: block;
+}
+input[type=checkbox] {
+  display :none;
+}
+input[type=checkbox] + label { 
+  content: url(/assets/menu.svg);
+}
+input[type=checkbox]:checked + label {
+  content: url(/assets/x.svg);
 }
 
-.header__item {
-  color: #F6F6E9;
-  font-size: 2rem;
-  font-weight: 700;
 
-}
 
 /******ABOUT SECTION*******/
 .about {
@@ -67,78 +71,31 @@ body {
 .card__header {
 	display: flex;
 	flex-direction: column;
-
-	align-items: center;
 }
 
-.card__name {
-  
-}
 
-.card__body {
-
-}
-
-.card__blurb {
-
-}
-
-.card__role {
-
-}
-
-.card__avatar {
-  
-}
 
 .card__social-media {
 
 }
 
-.card__footer {
+/******ABOUT SECTION*******/
 
-}
+.about {}
 
-.card > * {
-	border: 1px solid red;
-	padding: 20px;
 
-	width: 100%;
-}
-
-.card__footer > ul {
-	list-style-type: none;
-	padding-left: 0;
-
-	display: flex;
-
-	justify-content: space-around;
-}
-
-.card__social-media {
-
-}
-
-/*****CONTACT SECTION********/
-.contact {
-
-}
+/******TEAM SECTION*******/
 
 .contact__form {
 
 }
 
-input:valid, textarea:valid {
-  border: 1px solid green;
-}
+.team {}
 
-input:invalid {
-  background-color: 2px solid grey;
-}
+/*****CONTACT SECTION********/
 
-.contact__alt {
+.contact {}
 
-}
 
 input, textarea {
   background-color: #D7EEF2;
@@ -182,8 +139,8 @@ input, textarea {
 }
 
 /******FOOTER SECTION*******/
-.footer {
-}
+
+.footer {}
 
 /**********GENERAL***********/
 .section__title {
