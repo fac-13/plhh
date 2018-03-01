@@ -1,5 +1,4 @@
-@import url('https://rsms.me/inter/inter-ui.css');
-
+@import url("https://rsms.me/inter/inter-ui.css");
 /****RESET STYLE******/
 
 *,
@@ -8,35 +7,40 @@
   box-sizing: border-box;
   /* border: 1px solid blue; */
 }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
+
 /****body styles ****/
 
 body {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
-  font-family: 'Inter UI', sans-serif;
-  background-color: #F6F6E9;
-  color:#194769;
+  font-family: "Inter UI", sans-serif;
+  background-color: #f6f6e9;
+  color: #194769;
 }
 
 /******HEADER SECTION*******/
-.header {
-}
-.header__title {
-  font-weight: 900;
-  letter-spacing: .05rem;
-}
 
-.header__item {
-  color: #F6F6E9;
-  font-size: 2rem;
-  font-weight: 700;
-
+.header__list {
+  display: none;
+}
+.header__hamburger input[type="checkbox"]:checked ~ .header__list {
+  display: block;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  content: url(assets/menu.svg);
+}
+input[type="checkbox"]:checked + label {
+  content: url(assets/x.svg);
 }
 
 /******ABOUT SECTION*******/
@@ -55,8 +59,8 @@ body {
   /* border: 1px solid blue; */
   /* max-width: 30rem; */
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
   align-items: center;
   vertical-align: top;
@@ -123,71 +127,65 @@ li:nth-child(2) {
 
 .card__social-media {
 
+.about {
+}
+
+/******TEAM SECTION*******/
+
+.contact__form {
+}
+
+.team {
 }
 
 /*****CONTACT SECTION********/
+
 .contact {
-
 }
 
-.contact__form {
-
-}
-
-input:valid, textarea:valid {
-  border: 1px solid green;
-}
-
-input:invalid {
-  background-color: 2px solid grey;
-}
-
-.contact__alt {
-
-}
-
-input, textarea {
-  background-color: #D7EEF2;
-  vertical-align:middle;
-  white-space:normal;
+input,
+textarea {
+  background-color: #d7eef2;
+  vertical-align: middle;
+  white-space: normal;
   line-height: 1;
-  margin:0;
-	border:0;
-	padding:0;
-  display:inline-block;
-  
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+
   padding: 1rem;
   width: 100%;
-  margin: .4rem 0 .8rem;
+  margin: 0.4rem 0 0.8rem;
 }
 
 :focus {
-  
 }
 
-::placeholder  {
-  font-family: 'Inter UI', sans-serif;
-  font-size: .8rem;
-  color: rgba(25,71,105, 0.5);
+::placeholder {
+  font-family: "Inter UI", sans-serif;
+  font-size: 0.8rem;
+  color: rgba(25, 71, 105, 0.5);
 }
 
 .form__label {
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .form__button {
   background-color: #194769;
   border: none;
   width: 100%;
-  padding: .5rem 0;
-  font-family: 'Inter UI', sans-serif;
+  padding: 0.5rem 0;
+  font-family: "Inter UI", sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #D7EEF2;
+  color: #d7eef2;
 }
 
 /******FOOTER SECTION*******/
+
 .footer {
 }
 
@@ -198,7 +196,7 @@ input, textarea {
 }
 
 .section__title:before {
-  content: '';
+  content: "";
   width: 3.5rem;
   height: .35rem;
   background-color: #F2855E;
@@ -217,7 +215,7 @@ input, textarea {
 }
 
 a {
-  color: #F2855E;
+  color: #f2855e;
   font-weight: 700;
 }
 
