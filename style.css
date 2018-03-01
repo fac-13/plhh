@@ -26,6 +26,12 @@ body {
 
 /******HEADER SECTION*******/
 
+.header__title {
+	font-size: 4em;
+	letter-spacing: 0.15em;
+
+}
+
 .header__list {
   display: none;
   background-color: #194769;
@@ -40,8 +46,8 @@ body {
 	letter-spacing: 0.13em;
 	color:#F6F6E9;
     font-size: 2em;
-    font-weight: normal;
-}
+/*    font-weight: normal;
+*/}
 .header__list li {
 	padding: 10px;
 }
@@ -54,15 +60,11 @@ input[type=checkbox] {
 input[type=checkbox] + label { 
   content: url(assets/menu.svg);
   height: 50px;
-
 }
 input[type=checkbox]:checked + label {
   content: url(assets/x.svg);
   height: 50px;
 }
-
-
-
 .fixed__nav span a {
   content: url(assets/arrow-up-circle.svg);
   height: 50px;
@@ -71,6 +73,32 @@ input[type=checkbox]:checked + label {
   bottom: 5%;
 }
 
+@media screen and (min-width: 600px) {
+
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.header__list {
+		display: flex;
+		justify-content: space-around;
+		background-color: #F6F6E9;
+		margin: 0;
+	}
+	.header__list li {
+		display: inline;
+	}
+	.header__list a {
+		color: #194769;
+	}
+	input[type=checkbox] + label { 
+	  display:none;
+	}
+
+
+}
 
 
 /******ABOUT SECTION*******/
