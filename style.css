@@ -36,10 +36,10 @@ input[type="checkbox"] {
   display: none;
 }
 input[type="checkbox"] + label {
-  content: url(/assets/menu.svg);
+  content: url(assets/menu.svg);
 }
 input[type="checkbox"]:checked + label {
-  content: url(/assets/x.svg);
+  content: url(assets/x.svg);
 }
 
 /******ABOUT SECTION*******/
