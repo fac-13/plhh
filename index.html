@@ -30,16 +30,16 @@
 
             <ul class="header__list">
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#about" class="header__item">About</a>
                 </li>
                 <li>
-                    <a href="#team">team</a>
+                    <a href="#team" class="header__item">team</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" class="header__item">Contact</a>
                 </li>
                 <li>
-                    <a href="#footer">Footer</a>
+                    <a href="#footer" class="header__item">Footer</a>
                 </li>
             </ul>
         </nav>
@@ -48,7 +48,9 @@
 
     <section aria-label="about" id="about" class="about">
         <h2 class="section__title">About</h2>
-        <p class="section__text">About us</p>
+        <p class="section__text">PLHH met at <a href="https://foundersandcoders.com/" target="_blank">Founders & Coders</a> in February 2018.</p>
+        <p class="section__text">We loved working together and formed a design agency built upon our core values and specialising in projects for the non-profit sector.</p>
+        <p class="section__text">We can't wait to hear from you!</p>
 
         <article aria-label="card" class="card">
             <header aria-label="about_Card_Header" class="card__header">
@@ -57,8 +59,9 @@
                 </figure>
                 <h3 class="card__name">Accessible</h3>
             </header>
-            <main aria-label="about_Card_Body" class="card__body">
-                <p class="card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <main aria-label="about_Card_Body" class="about-card__body">
+                <p class="about-card__blurb">Accessibility is a fundamental value of PLHH. We believe internet users should be able to access content no matter what their preferred device, their connection speed, or their use of assistive technologies.</p>
             </main>
         </article>
 
@@ -69,8 +72,8 @@
                 </figure>
                 <h3 class="card__name">Fast</h3>
             </header>
-            <main aria-label="about_Card_Body" class="card__body">
-                <p class="card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <main aria-label="about_Card_Body" class="about-card__body">
+                <p class="about-card__blurb">We avoid using bloated frameworks and libraries and write lean code so that your sites and apps will run at lightning speed - any time, anywhere!</p>
             </main>
         </article>
 
@@ -81,8 +84,8 @@
                 </figure>
                 <h3 class="card__name">Secure</h3>
             </header>
-            <main aria-label="about_Card_Body" class="card__body">
-                <p class="card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <main aria-label="about_Card_Body" class="about-card__body">
+                <p class="about-card__blurb">Since we don't know how to build you a backend yet, you won't have any data to be stolen!</p>
             </main>
         </article>
 
@@ -93,8 +96,8 @@
                 </figure>
                 <h3 class="card__name">Community</h3>
             </header>
-            <main aria-label="about_Card_Body" class="card__body">
-                <p class="card__blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <main aria-label="about_Card_Body" class="about-card__body">
+                <p class="about-card__blurb">We will publish your code on the web... Perhaps you don't want that, but the community loves it. Open source facilitates best prectices for everybody.</p>
             </main>
         </article>
 
@@ -102,7 +105,7 @@
     </section>
 
     <section aria-label="team" id="team" class="team">
-        <h2 class="section__title">TEAM</h2>
+        <h2 class="section__title">Team</h2>
         <p class="section__text">This is us</p>
 
         <article aria-label="card" class="card">
@@ -198,24 +201,24 @@
         <h2 class="section__title">Contact</h2>
             
         <form action="https://formspree.io/your@email.com" class="contact__form" autocomplete="on" method="post">
-            <label for="firstname">First Name</label>
+            <label for="firstname" class="form__label">First Name</label>
             <br />
             <input name="First Name" id="firstname" type="text" placeholder="John"required/>
             <br />
-            <label for="lastname">Last Name</label>
+            <label for="lastname" class="form__label">Last Name</label>
             <br />
             <input id="lastname" name="Last Name" type="text" placeholder="Smith" required/>
             <br />
-            <label for="email">Email</label>
+            <label for="email" class="form__label">Email</label>
             <br />
             <input id="email" name="Email" type="email" placeholder="your@email.com" required/>
             <br />
-            <label for="message">Message</label>
+            <label for="message" class="form__label">Message</label>
             <br />
             <textarea id="message" name="Message" type="text" form="contact" placeholder="Your message" required></textarea>
             <br />
             <label for="submit" class="is-hidden">Submit</label>
-            <button id="submit" name="Submit" type="submit" />Submit
+            <button class="form__button" id="submit" name="Submit" type="submit" />Submit
             </button>
         </form>
 
