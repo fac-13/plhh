@@ -195,10 +195,49 @@ textarea {
   color: #d7eef2;
 }
 
+.contact .section__text {
+	padding: 20px;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
 /******FOOTER SECTION*******/
 
 .footer {
+	font-size: 1.3em;
+	background-color: lightgrey;
+	height: auto;
+	margin-top: 20px;
+	padding: 20px 10px;
+	
 }
+.footer p {
+	text-align: center;
+}
+.footer ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+.footer ul li {
+	display: inline;
+}
+.footer a {
+	color: #194769;
+	font-size: 2em;
+	padding: 30px;
+}
+@media screen and (min-width: 600px) {
+	.footer {
+		display: flex;
+		justify-content: space-around;
+	}
+	.footer p {
+		padding-top: 12px;
+	}
+}
+
 
 /**********GENERAL***********/
 .section__title {
