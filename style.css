@@ -6,6 +6,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  border: 1px solid blue;
 }
 .clearfix:after {
   content: "";
@@ -15,7 +16,7 @@
 /****body styles ****/
 
 body {
-  margin: 1rem;
+  margin: 0rem;
   padding: 0;
   text-rendering: optimizeLegibility;
   font-family: 'Inter UI', sans-serif;
@@ -44,7 +45,7 @@ body {
 
 /******TEAM SECTION*******/
 .team {
-	border: 1px solid black;
+	
 }
 
 /******CARDS*******/
@@ -59,8 +60,6 @@ body {
 }
 
 .card > * {
-	padding: 20px;
-
 	width: 100%;
 }
 
@@ -71,12 +70,14 @@ body {
 	align-items: center;
 }
 
+
+
 .card__name {
   
 }
 
 .card__body {
-
+  padding: 0px;
 }
 
 .card__blurb {
@@ -97,13 +98,6 @@ body {
 
 .card__footer {
 
-}
-
-.card > * {
-	border: 1px solid red;
-	padding: 20px;
-
-	width: 100%;
 }
 
 .card__footer > ul {
@@ -211,4 +205,37 @@ input, textarea {
 a {
   color: #F2855E;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    /* background-color: red; */
+  }
+  .section__text {
+    max-width: 60%;
+  }
+  .card {
+    width: 49%;
+    display: inline-block;
+
+  }
+  .about {
+    background-color: #D7EEF2;
+    
+  }
+
+  .inner-section {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 3rem 3rem 5rem;
+  }
+
+  .card:nth-child(odd) {
+    padding-right: 2rem;
+  }
+
+  .card:nth-child(even) {
+    padding-left: 2rem;
+  }
+
 }
