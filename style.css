@@ -43,7 +43,7 @@ body {
 .header__list a {
   text-decoration: none;
   letter-spacing: 0.13em;
-  color: #F6f6e9;
+  color: #f6f6e9;
   font-size: 2em;
   /*    font-weight: normal;
 */
@@ -60,6 +60,9 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
   content: url(assets/menu.svg);
   height: 50px;
+  position: absolute;
+  right: 5%;
+  top: 9.5%;
 }
 input[type="checkbox"]:checked + label {
   content: url(assets/x.svg);
