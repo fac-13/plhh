@@ -31,17 +31,6 @@ body {
   letter-spacing: .05rem;
 }
 
-/* .header__list--is-active {
-  /* TO USE WHEN MOBILE IS OPEN */
-  background-color: #194769;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-} */
-
 .header__item {
   color: #F6F6E9;
   font-size: 2rem;
