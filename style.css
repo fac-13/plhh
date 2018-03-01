@@ -35,9 +35,22 @@ input[type=checkbox] {
 }
 input[type=checkbox] + label { 
   content: url(assets/menu.svg);
+  height: 50px;
+
 }
 input[type=checkbox]:checked + label {
   content: url(assets/x.svg);
+  height: 50px;
+}
+
+
+
+.fixed__nav span a {
+  content: url(assets/arrow-up-circle.svg);
+  height: 50px;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
 }
 
 
