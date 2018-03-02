@@ -24,6 +24,22 @@ body {
   color: #194769;
 }
 
+.header__skiplinks {
+	padding: 10px;
+}
+
+a.skip-link {
+	position: relative;
+	z-index: -999;
+	left: -999px;
+}
+
+a.skip-link:focus, a.skip-link:active {
+	z-index: 999;
+	left: auto;
+
+}
+
 /******HEADER SECTION*******/
 
 .header__title {
