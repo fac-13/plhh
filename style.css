@@ -112,10 +112,12 @@ input[type="checkbox"]:checked + label {
 /******ABOUT SECTION*******/
 .about {
 }
+.card__header figure{
+  margin: 0 auto;
+}
 
 /******TEAM SECTION*******/
 .team {
-	
 }
 
 /******CARDS*******/
@@ -125,8 +127,8 @@ input[type="checkbox"]:checked + label {
   /* border: 1px solid blue; */
   /* max-width: 30rem; */
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
   align-items: center;
   vertical-align: top;
@@ -138,13 +140,11 @@ input[type="checkbox"]:checked + label {
 }
 
 .card__header {
-	/* display: flex; */
-	/* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 
-	/* align-items: center; */
+  justify-content: center;
 }
-
-
 
 .card__name {
   margin-top: 0;
@@ -156,7 +156,6 @@ input[type="checkbox"]:checked + label {
 }
 
 .card__role {
-
 }
 
 .card__avatar {
@@ -166,11 +165,9 @@ input[type="checkbox"]:checked + label {
 .card__avatar img {
   width: 10rem;
   border-radius: 11%;
-
 }
 
 .card__social-media {
-
 }
 
 .card__footer {
@@ -178,33 +175,28 @@ input[type="checkbox"]:checked + label {
 }
 
 .card__footer > ul {
-	list-style-type: none;
-	padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 
-	display: flex;
-  
-	/* justify-content: center; */
+  display: flex;
+
+  /* justify-content: center; */
 }
 
-li:nth-child(2) {
+.card__social-media li:nth-child(2) {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.card__social-media {
-
-}
-
 /*****CONTACT SECTION********/
 .contact {
-
 }
 
 .contact__form {
-
 }
 
-input:valid, textarea:valid {
+input:valid,
+textarea:valid {
   border: 1px solid green;
 }
 
@@ -213,93 +205,90 @@ input:invalid {
 }
 
 .contact__alt {
-
 }
 
-input, textarea {
-  background-color: #D7EEF2;
-  vertical-align:middle;
-  white-space:normal;
+input,
+textarea {
+  background-color: #d7eef2;
+  vertical-align: middle;
+  white-space: normal;
   line-height: 1;
-  margin:0;
-	border:0;
-	padding:0;
-  display:inline-block;
-  
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+
   padding: 1rem;
   width: 100%;
-  margin: .4rem 0 .8rem;
+  margin: 0.4rem 0 0.8rem;
 }
 
 :focus {
-  
 }
 
-::placeholder  {
-  font-family: 'Inter UI', sans-serif;
-  font-size: .8rem;
-  color: rgba(25,71,105, 0.5);
+::placeholder {
+  font-family: "Inter UI", sans-serif;
+  font-size: 0.8rem;
+  color: rgba(25, 71, 105, 0.5);
 }
 
 .form__label {
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .form__button {
   background-color: #194769;
   border: none;
   width: 100%;
-  padding: .5rem 0;
-  font-family: 'Inter UI', sans-serif;
+  padding: 0.5rem 0;
+  font-family: "Inter UI", sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #D7EEF2;
+  color: #d7eef2;
 }
 
 .contact .section__text {
-	padding: 20px;
-	font-size: 1.1em;
-	line-height: 1.5em;
+  padding: 20px;
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
 
 /******FOOTER SECTION*******/
 
 .footer {
-	font-size: 1.3em;
-	background-color: lightgrey;
-	height: auto;
-	margin-top: 20px;
-	padding: 20px 10px;
-	
+  font-size: 1.3em;
+  background-color: lightgrey;
+  height: auto;
+  margin-top: 20px;
+  padding: 20px 10px;
 }
 .footer p {
-	text-align: center;
+  text-align: center;
 }
 .footer ul {
-	list-style-type: none;
-	padding: 0;
-	display: flex;
-	justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 .footer ul li {
-	display: inline;
+  display: inline;
 }
 .footer a {
-	color: #194769;
-	font-size: 2em;
-	padding: 30px;
+  color: #194769;
+  font-size: 2em;
+  padding: 30px;
 }
 @media screen and (min-width: 600px) {
-	.footer {
-		display: flex;
-		justify-content: space-around;
-	}
-	.footer p {
-		padding-top: 12px;
-	}
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer p {
+    padding-top: 12px;
+  }
 }
-
 
 /**********GENERAL***********/
 .section__title {
@@ -308,10 +297,10 @@ input, textarea {
 }
 
 .section__title:before {
-  content: '';
+  content: "";
   width: 3.5rem;
-  height: .35rem;
-  background-color: #F2855E;
+  height: 0.35rem;
+  background-color: #f2855e;
   display: block;
 }
 
@@ -341,11 +330,9 @@ a {
   .card {
     width: 49%;
     display: inline-block;
-
   }
   .about {
-    background-color: #D7EEF2;
-    
+    background-color: #d7eef2;
   }
 
   .inner-section {
@@ -370,7 +357,7 @@ a {
   }
 
   .contact {
-    background-color: #D7EEF2;
+    background-color: #d7eef2;
   }
 
   .contact__form {
@@ -380,9 +367,9 @@ a {
     grid-column-gap: 2rem;
   }
 
-
-  input, textarea {
-    background-color: #F6F6E9;
+  input,
+  textarea {
+    background-color: #f6f6e9;
     resize: none;
   }
 
@@ -407,7 +394,6 @@ a {
   .card__blurb {
     max-width: 20rem;
   }
-
 }
 
 @media screen and (min-width: 550px) {
