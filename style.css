@@ -84,12 +84,11 @@ input[type="checkbox"]:checked + label {
   content: url(assets/x.svg);
   height: 50px;
 }
-.fixed__nav span a {
-  content: url(assets/arrow-up-circle.svg);
-  height: 50px;
-  position: fixed;
-  right: 5%;
-  bottom: 5%;
+.back-to-top-icon a img {
+	height: 50px;
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
 }
 
 @media screen and (min-width: 600px) {
@@ -280,6 +279,15 @@ input, textarea {
 }
 
 /******FOOTER SECTION*******/
+
+
+.footer__links {
+
+}
+
+.footer__copyright {
+
+}
 
 .footer {
 	font-size: 1.3em;
