@@ -115,91 +115,146 @@ input[type="checkbox"]:checked + label {
 
 /******TEAM SECTION*******/
 .team {
-  border: 1px solid black;
+	
 }
 
 /******CARDS*******/
 
 .card {
-  width: 100vw;
+  /* width: 100vw; */
+  /* border: 1px solid blue; */
+  /* max-width: 30rem; */
 
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
   align-items: center;
+  vertical-align: top;
+  padding-top: 2rem;
 }
 
 .card > * {
-  padding: 20px;
-
   width: 100%;
 }
 
 .card__header {
-  display: flex;
-  flex-direction: column;
+	/* display: flex; */
+	/* flex-direction: column; */
+
+	/* align-items: center; */
+}
+
+
+
+.card__name {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card__body {
+  padding: 0px;
+}
+
+.card__role {
+
+}
+
+.card__avatar {
+  margin-left: 0;
+}
+
+.card__avatar img {
+  width: 10rem;
+  border-radius: 11%;
+
 }
 
 .card__social-media {
+
 }
 
-/******ABOUT SECTION*******/
-
-.about {
+.card__footer {
+  margin-bottom: 4rem;
 }
 
-/******TEAM SECTION*******/
+.card__footer > ul {
+	list-style-type: none;
+	padding-left: 0;
 
-.contact__form {
+	display: flex;
+  
+	/* justify-content: center; */
 }
 
-.team {
+li:nth-child(2) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card__social-media {
+
 }
 
 /*****CONTACT SECTION********/
-
 .contact {
+
 }
 
-input,
-textarea {
-  background-color: #d7eef2;
-  vertical-align: middle;
-  white-space: normal;
-  line-height: 1;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  display: inline-block;
+.contact__form {
 
+}
+
+input:valid, textarea:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  background-color: 2px solid grey;
+}
+
+.contact__alt {
+
+}
+
+input, textarea {
+  background-color: #D7EEF2;
+  vertical-align:middle;
+  white-space:normal;
+  line-height: 1;
+  margin:0;
+	border:0;
+	padding:0;
+  display:inline-block;
+  
   padding: 1rem;
   width: 100%;
-  margin: 0.4rem 0 0.8rem;
+  margin: .4rem 0 .8rem;
 }
 
 :focus {
+  
 }
 
-::placeholder {
-  font-family: "Inter UI", sans-serif;
-  font-size: 0.8rem;
-  color: rgba(25, 71, 105, 0.5);
+::placeholder  {
+  font-family: 'Inter UI', sans-serif;
+  font-size: .8rem;
+  color: rgba(25,71,105, 0.5);
 }
 
 .form__label {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 .form__button {
   background-color: #194769;
   border: none;
   width: 100%;
-  padding: 0.5rem 0;
-  font-family: "Inter UI", sans-serif;
+  padding: .5rem 0;
+  font-family: 'Inter UI', sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #d7eef2;
+  color: #D7EEF2;
 }
 
 .contact .section__text {
@@ -253,15 +308,18 @@ textarea {
 }
 
 .section__title:before {
-  content: "";
+  content: '';
   width: 3.5rem;
-  height: 0.35rem;
-  margin-bottom: -0.2rem;
-  background-color: #f2855e;
+  height: .35rem;
+  background-color: #F2855E;
   display: block;
 }
 
 .section__text {
+}
+
+.inner-section {
+  padding: 3rem;
 }
 
 .is-hidden {
@@ -269,6 +327,91 @@ textarea {
 }
 
 a {
-  color: #f2855e;
+  color: #F2855E;
   font-weight: 700;
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    margin: 0;
+  }
+  .section__text {
+    max-width: 60%;
+  }
+  .card {
+    width: 49%;
+    display: inline-block;
+
+  }
+  .about {
+    background-color: #D7EEF2;
+    
+  }
+
+  .inner-section {
+    max-width: 58rem;
+    margin: 0 auto;
+    padding: 3rem 3rem 5rem 3.5rem;
+  }
+
+  .about .card:nth-child(odd) {
+    padding-right: 2rem;
+  }
+
+  .about .card:nth-child(even) {
+    padding-left: 2rem;
+  }
+  .team .card:nth-child(odd) {
+    padding-left: 2rem;
+  }
+
+  .team .card:nth-child(even) {
+    padding-right: 2rem;
+  }
+
+  .contact {
+    background-color: #D7EEF2;
+  }
+
+  .contact__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+
+
+  input, textarea {
+    background-color: #F6F6E9;
+    resize: none;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+  /* .contact__form :nth-last-child() {
+    grid-column: 2/3;
+    grid-rows: 1/4;
+  } */
+
+  .contact__form .form__message {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .contact__form .form__submit {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .card__blurb {
+    max-width: 20rem;
+  }
+
+}
+
+@media screen and (min-width: 550px) {
+  .inner-section {
+    padding: 8rem;
+  }
 }
