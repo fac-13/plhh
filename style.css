@@ -37,9 +37,11 @@ body {
   list-style-type: none;
   padding: 20px 10px;
 }
+
 .header__list {
   list-style-type: none;
 }
+
 .header__list a {
   text-decoration: none;
   letter-spacing: 0.13em;
@@ -51,12 +53,15 @@ body {
 .header__list li {
   padding: 10px;
 }
+
 .header__hamburger input[type="checkbox"]:checked ~ .header__list {
   display: block;
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 input[type="checkbox"] + label {
   content: url(assets/menu.svg);
   height: 50px;
@@ -64,10 +69,12 @@ input[type="checkbox"] + label {
   right: 5%;
   top: 9.5%;
 }
+
 input[type="checkbox"]:checked + label {
   content: url(assets/x.svg);
   height: 50px;
 }
+
 .fixed__nav span a {
   content: url(assets/arrow-up-circle.svg);
   height: 50px;
@@ -77,56 +84,19 @@ input[type="checkbox"]:checked + label {
 }
 
 @media screen and (min-width: 600px) {
-  .header__title {
-    margin: 0;
-  }
-  .header__list {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f6f6e9;
-    margin: 0;
-    padding: 0;
-  }
-  .header__list li {
-    display: inline;
-    padding-bottom: 5px;
-  }
-  .header__list a {
-    color: #194769;
-  }
-  input[type="checkbox"] + label {
-    display: none;
-  }
-}
-@media screen and (min-width: 950px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  .header__list li {
-    margin-left: 35px;
-  }
+  
 }
 
+
 /******ABOUT SECTION*******/
-.about {
-}
 .card__header figure{
   margin: 0 auto;
 }
 
-/******TEAM SECTION*******/
-.team {
-}
 
 /******CARDS*******/
 
 .card {
-  /* width: 100vw; */
-  /* border: 1px solid blue; */
-  /* max-width: 30rem; */
-
   display: flex;
   flex-direction: column;
 
@@ -155,9 +125,6 @@ input[type="checkbox"]:checked + label {
   padding: 0px;
 }
 
-.card__role {
-}
-
 .card__avatar {
   margin-left: 0;
 }
@@ -165,9 +132,6 @@ input[type="checkbox"]:checked + label {
 .card__avatar img {
   width: 10rem;
   border-radius: 11%;
-}
-
-.card__social-media {
 }
 
 .card__footer {
@@ -180,7 +144,6 @@ input[type="checkbox"]:checked + label {
 
   display: flex;
 
-  /* justify-content: center; */
 }
 
 .card__social-media li:nth-child(2) {
@@ -189,11 +152,6 @@ input[type="checkbox"]:checked + label {
 }
 
 /*****CONTACT SECTION********/
-.contact {
-}
-
-.contact__form {
-}
 
 input:valid,
 textarea:valid {
@@ -204,8 +162,6 @@ input:invalid {
   background-color: 2px solid grey;
 }
 
-.contact__alt {
-}
 
 input,
 textarea {
@@ -223,8 +179,6 @@ textarea {
   margin: 0.4rem 0 0.8rem;
 }
 
-:focus {
-}
 
 ::placeholder {
   font-family: "Inter UI", sans-serif;
@@ -263,31 +217,30 @@ textarea {
   margin-top: 20px;
   padding: 20px 10px;
 }
+
 .footer p {
   text-align: center;
 }
+
 .footer ul {
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: space-around;
 }
+
 .footer ul li {
   display: inline;
 }
+
 .footer a {
   color: #194769;
   font-size: 2em;
   padding: 30px;
 }
+
 @media screen and (min-width: 600px) {
-  .footer {
-    display: flex;
-    justify-content: space-around;
-  }
-  .footer p {
-    padding-top: 12px;
-  }
+  
 }
 
 /**********GENERAL***********/
@@ -304,8 +257,6 @@ textarea {
   display: block;
 }
 
-.section__text {
-}
 
 .inner-section {
   padding: 3rem;
@@ -320,10 +271,42 @@ a {
   font-weight: 700;
 }
 
+@media screen and (min-width: 550px) {
+  .inner-section {
+    padding: 8rem;
+  }
+}
+
 @media screen and (min-width: 720px) {
   body {
     margin: 0;
   }
+
+  .header__title {
+    margin: 0;
+  }
+
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6e9;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__list li {
+    display: inline;
+    padding-bottom: 5px;
+  }
+
+  .header__list a {
+    color: #194769;
+  }
+  
+  input[type="checkbox"] + label {
+    display: none;
+  }
+
   .section__text {
     max-width: 60%;
   }
@@ -376,10 +359,6 @@ a {
   textarea {
     height: 10rem;
   }
-  /* .contact__form :nth-last-child() {
-    grid-column: 2/3;
-    grid-rows: 1/4;
-  } */
 
   .contact__form .form__message {
     grid-column: 2/3;
@@ -394,10 +373,25 @@ a {
   .card__blurb {
     max-width: 20rem;
   }
-}
 
-@media screen and (min-width: 550px) {
-  .inner-section {
-    padding: 8rem;
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer p {
+    padding-top: 12px;
   }
 }
+
+@media screen and (min-width: 950px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header__list li {
+    margin-left: 35px;
+  }
+}
+
