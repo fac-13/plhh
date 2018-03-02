@@ -24,6 +24,22 @@ body {
   color: #194769;
 }
 
+.header__skiplinks {
+	padding: 10px;
+}
+
+a.skip-link {
+	position: relative;
+	z-index: -999;
+	left: -999px;
+}
+
+a.skip-link:focus, a.skip-link:active {
+	z-index: 999;
+	left: auto;
+
+}
+
 /******HEADER SECTION*******/
 
 .header__title {
@@ -74,13 +90,12 @@ input[type="checkbox"]:checked + label {
   content: url(assets/x.svg);
   height: 50px;
 }
+.back-to-top-icon a img {
+	height: 50px;
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
 
-.fixed__nav span a {
-  content: url(assets/arrow-up-circle.svg);
-  height: 50px;
-  position: fixed;
-  right: 5%;
-  bottom: 5%;
 }
 
 @media screen and (min-width: 600px) {
@@ -209,6 +224,15 @@ textarea {
 }
 
 /******FOOTER SECTION*******/
+
+
+.footer__links {
+
+}
+
+.footer__copyright {
+
+}
 
 .footer {
   font-size: 1.3em;

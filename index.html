@@ -13,17 +13,23 @@
 </head>
 
 <body>
-    <header aria-label="header" id="top" class="header">
+
+    <nav class="header__skiplinks" role="bypass the navigation menus for screen readers">
+        <a href="#about" class="skip-link">skip to main content</a>
+    </nav>
+
+    <header aria-label="site header area" id="top" class="header" role="site banner">
+
         <h1 class="header__title">PLHH</h1>
 
-        <nav class="header__nav">
+        <nav class="header__nav" role="main site navigation">
 
             <div class="header__hamburger">
                 
-                <input type="checkbox" id="menu-check"/ >
+                <input type="checkbox" id="menu-check" role="collapsible mobile first menu" />
                 <label for="menu-check"></label>
                 
-                <ul class="header__list">
+                <ul class="header__list" role="page links list">
                     <li>
                         <a href="#about" class="header__item">About</a>
                     </li>
@@ -33,116 +39,114 @@
                     <li>
                         <a href="#contact" class="header__item">Contact</a>
                     </li>
-                    <li>
-                        <a href="#footer" class="header__item">Footer</a>
-                    </li>
                 </ul>
             </div>
 
         </nav>
 
-        <nav class="fixed__nav">
-            
-            <span><a href="#"></a></span>
-
+        <nav class="fixed__nav" role="return to top navigation for mobile users">
+            <span class="back-to-top-icon"><a aria-label="back to page top button" href="#"><img src="assets/arrow-up-circle.svg" alt="arrow up button icon" /></a></span>
         </nav>
 
     </header>
 
-    <section aria-label="about" id="about" class="about clearfix">
+    <section aria-label="site about area" id="about" class="about">
+        
         <div class="inner-section">
-            <h2 class="section__title">About</h2>
-            <p class="section__text">PLHH met at
-                <a href="https://foundersandcoders.com/" target="_blank">Founders & Coders</a> in February 2018.</p>
-            <p class="section__text">We loved working together and formed a design agency built upon our core values and specialising in projects
-                for the non-profit sector.</p>
-            <p class="section__text">We can't wait to hear from you!</p>
 
-            <article aria-label="card" class="card">
-                <header aria-label="about_Card_Header" class="card__header">
+            <h2 class="section__title">About</h2>
+            <p aria-label="about our company blurb" class="section__text">PLHH met at
+                <a href="https://foundersandcoders.com/" target="_blank">Founders & Coders</a> in February 2018.<br /><br />We loved working together and formed a design agency built upon our core values and specialising in projects
+                for the non-profit sector.<br /><br />We can't wait to hear from you!</p>
+
+            <article aria-label="values card" class="card">
+                <header aria-label="values card header" class="card__header">
                     <figure>
-                        <img src="assets/value-accessibility.svg" alt="this is a generic about icon image" title="about Icon" />
+                        <img src="assets/value-accessibility.svg" alt="this is a generic about icon image" title="accessible Icon" />
                     </figure>
                     <h3 class="card__name">Accessible</h3>
                 </header>
-
-                <main aria-label="about_Card_Body" class="card__body">
+                <main aria-label="values card body" class="card__body">
                     <p class="card__blurb">Accessibility is a fundamental value of PLHH. We believe internet users should be able to access content
                         no matter what their preferred device, their connection speed, or their use of assistive technologies.</p>
                 </main>
             </article>
 
-            <article aria-label="card" class="card">
-                <header aria-label="about_Card_Header" class="card__header">
+            <article aria-label="values card" class="card">
+                <header aria-label="values card header" class="card__header">
                     <figure>
-                        <img src="assets/value-fast.svg" alt="this is a generic about icon image" title="about Icon" />
+                        <img src="assets/value-fast.svg" alt="this is a generic about icon image" title="fast Icon" />
                     </figure>
                     <h3 class="card__name">Fast</h3>
                 </header>
-                <main aria-label="about_Card_Body" class="card__body">
+                <main aria-label="values card body" class="card__body">
                     <p class="card__blurb">We avoid using bloated frameworks and libraries and write lean code so that your sites and apps will
                         run at lightning speed - any time, anywhere!</p>
                 </main>
             </article>
 
-            <article aria-label="card" class="card">
-                <header aria-label="about_Card_Header" class="card__header">
+            <article aria-label="values card" class="card">
+                <header aria-label="values card header" class="card__header">
                     <figure>
-                        <img src="assets/value-secure.svg" alt="this is a generic about icon image" title="about Icon" />
+                        <img src="assets/value-secure.svg" alt="this is a generic about icon image" title="secure Icon" />
                     </figure>
                     <h3 class="card__name">Secure</h3>
                 </header>
-                <main aria-label="about_Card_Body" class="card__body">
+                <main aria-label="values card body" class="card__body">
                     <p class="card__blurb">Since we don't know how to build you a backend yet, you won't have any data to be stolen!</p>
                 </main>
             </article>
 
-            <article aria-label="card" class="card">
-                <header aria-label="about_Card_Header" class="card__header">
+            <article aria-label="values card" class="card">
+                <header aria-label="values card header" class="card__header">
                     <figure>
-                        <img src="assets/value-community.svg" alt="this is a generic about icon image" title="about Icon" />
+                        <img src="assets/value-community.svg" alt="this is a generic about icon image" title="community Icon" />
                     </figure>
                     <h3 class="card__name">Community</h3>
                 </header>
-                <main aria-label="about_Card_Body" class="card__body">
+                <main aria-label="values card body" class="card__body">
                     <p class="card__blurb">We will publish your code on the web... Perhaps you don't want that, but the community loves it. Open
                         source facilitates best prectices for everybody.</p>
                 </main>
             </article>
+
         </div>
 
     </section>
 
     <section aria-label="team" id="team" class="team">
+
         <div class="inner-section">
+
             <h2 class="section__title">Team</h2>
+
             <article aria-label="card" class="card">
-                <header aria-label="" id="" class="card__header">
+                <header aria-label="team member header" class="card__header">
                     <figure aria-label="" id="" class="card__avatar">
                         <img src="https://avatars3.githubusercontent.com/u/29815092?s=460&v=4" alt="this is a photo of Parissa" title="Team Member Avatar"
                         />
                     </figure>
-                    <h3 aria-label="" id="" class="card__name">Parissa</h3>
+                    <h3 aria-label="team member name" class="card__name">Parissa</h3>
                 </header>
-                <main aria-label="" id="" class="card__body">
-                    <h2 aria-label="" id="" class="card__role">Lead Developer</h2>
-                    <p aria-label="" id="" class="card__blurb">Line Commander - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <main aria-label="team member body" class="card__body">
+                    <h2 aria-label="team member role" class="card__role">Lead Developer</h2>
+                    <p aria-label="team member statement" class="card__blurb">Line Commander - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </main>
-                <footer aria-label="" id="" class="card__footer">
-                    <ul aria-label="" id="" class="card__social-media">
+                <footer aria-label="team member footer" class="card__footer">
+                    <ul aria-label="team member social media" class="card__social-media">
                         <li>
-                            <a href="https://github.com/Parissai">
-                                <i class="fab fa-github fa-2x"></i>
+                            <a aria-label="team member github link" href="https://github.com/Parissai">
+                                <i alt="github link" class="fab fa-github fa-2x"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.freecodecamp.org/parissai">
-                                <i class="fab fa-free-code-camp fa-2x"></i>
+                            <a aria-label="team member freecodecamp link" href="https://www.freecodecamp.org/parissai">
+                                <i alt="freecodecamp link" class="fab fa-free-code-camp fa-2x"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <i class="fab fa-linkedin fa-2x"></i>
+                            <a aria-label="team member linkedin link" href="https://www.linkedin.com/">
+                                <i alt="linkedin link" class="fab fa-linkedin fa-2x"></i>
                             </a>
                         </li>
                     </ul>
@@ -150,34 +154,32 @@
             </article>
 
             <article aria-label="card" class="card">
-                <header aria-label="" id="" class="card__header">
+                <header aria-label="team member header" class="card__header">
                     <figure aria-label="" id="" class="card__avatar">
-                        <img src="https://avatars0.githubusercontent.com/u/18592207?s=460&v=4" alt="this is a photo Lawrence" title="Team Member Avatar"
+                        <img src="https://avatars0.githubusercontent.com/u/18592207?s=460&v=4" alt="this is a photo of Parissa" title="Team Member Avatar"
                         />
                     </figure>
-                    <h3 aria-label="" id="" class="card__name">Lawrence</h3>
+                    <h3 aria-label="team member name" class="card__name">Lawrence</h3>
                 </header>
-
-                <main aria-label="" id="" class="card__body">
-                    <h2 aria-label="" id="" class="card__role">Lead Developer</h2>
-                    <p aria-label="" id="" class="card__blurb">RegExpert - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <main aria-label="team member body" class="card__body">
+                    <h2 aria-label="team member role" class="card__role">Lead Developer</h2>
+                    <p aria-label="team member statement" class="card__blurb">RegExpert - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </main>
-
-                <footer aria-label="" id="" class="card__footer">
-                    <ul aria-label="" id="" class="card__social-media">
+                <footer aria-label="team member footer" class="card__footer">
+                    <ul aria-label="team member social media" class="card__social-media">
                         <li>
-                            <a href="https://github.com/LawEKS">
-                                <i class="fab fa-github fa-2x"></i>
+                            <a aria-label="team member github link" href="https://github.com/LawEKS">
+                                <i alt="github link" class="fab fa-github fa-2x"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.freecodecamp.org/LawEKS">
-                                <i class="fab fa-free-code-camp fa-2x"></i>
+                            <a aria-label="team member freecodecamp link" href="https://www.freecodecamp.org/LawEKS">
+                                <i alt="freecodecamp link" class="fab fa-free-code-camp fa-2x"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <i class="fab fa-linkedin fa-2x"></i>
+                            <a aria-label="team member linkedin link" href="https://www.linkedin.com/">
+                                <i alt="linkedin link" class="fab fa-linkedin fa-2x"></i>
                             </a>
                         </li>
                     </ul>
@@ -185,34 +187,32 @@
             </article>
 
             <article aria-label="card" class="card">
-                <header aria-label="" id="" class="card__header">
+                <header aria-label="team member header" class="card__header">
                     <figure aria-label="" id="" class="card__avatar">
-                        <img src="https://avatars3.githubusercontent.com/u/22300973?s=460&v=4" alt="this is a photo of Haydn" title="Team Member Avatar"
+                        <img src="https://avatars3.githubusercontent.com/u/22300973?s=460&v=4" alt="this is a photo of Parissa" title="Team Member Avatar"
                         />
                     </figure>
-                    <h3 aria-label="" id="" class="card__name">Haydn</h3>
+                    <h3 aria-label="team member name" class="card__name">Haydn</h3>
                 </header>
-
-                <main aria-label="" id="" class="card__body">
-                    <h2 aria-label="" id="" class="card__role">Lead Developer</h2>
-                    <p aria-label="" id="" class="card__blurb">Accessibility -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <main aria-label="team member body" class="card__body">
+                    <h2 aria-label="team member role" class="card__role">Lead Developer</h2>
+                    <p aria-label="team member statement" class="card__blurb">Accessibility - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </main>
-
-                <footer aria-label="" id="" class="card__footer">
-                    <ul aria-label="" id="" class="card__social-media">
+                <footer aria-label="team member footer" class="card__footer">
+                    <ul aria-label="team member social media" class="card__social-media">
                         <li>
-                            <a href="https://github.com/haydnba">
-                                <i class="fab fa-github fa-2x"></i>
+                            <a aria-label="team member github link" href="https://github.com/haydnba">
+                                <i alt="github link" class="fab fa-github fa-2x"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.freecodecamp.org/haydnba">
-                                <i class="fab fa-free-code-camp fa-2x"></i>
+                            <a aria-label="team member freecodecamp link" href="https://www.freecodecamp.org/haydnba">
+                                <i alt="freecodecamp link" class="fab fa-free-code-camp fa-2x"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <i class="fab fa-linkedin fa-2x"></i>
+                            <a aria-label="team member linkedin link" href="https://www.linkedin.com/">
+                                <i alt="linkedin link" class="fab fa-linkedin fa-2x"></i>
                             </a>
                         </li>
                     </ul>
@@ -220,44 +220,46 @@
             </article>
 
             <article aria-label="card" class="card">
-                <header aria-label="" id="" class="card__header">
+                <header aria-label="team member header" class="card__header">
                     <figure aria-label="" id="" class="card__avatar">
-                        <img src="https://avatars3.githubusercontent.com/u/25727036?s=460&v=4" alt="this is a photo of Lawrence" title="Team Member Avatar"
+                        <img src="https://avatars3.githubusercontent.com/u/25727036?s=460&v=4" alt="this is a photo of Parissa" title="Team Member Avatar"
                         />
                     </figure>
-                    <h3 aria-label="" id="" class="card__name">Helen</h3>
+                    <h3 aria-label="team member name" class="card__name">Helen</h3>
                 </header>
-
-                <main aria-label="" id="" class="card__body">
-                    <h2 aria-label="" id="" class="card__role">Lead Developer</h2>
-                    <p aria-label="" id="" class="card__blurb">CSS Star - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <main aria-label="team member body" class="card__body">
+                    <h2 aria-label="team member role" class="card__role">Lead Developer</h2>
+                    <p aria-label="team member statement" class="card__blurb">CSS Star - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </main>
-
-                <footer aria-label="" id="" class="card__footer">
-                    <ul aria-label="" id="" class="card__social-media">
+                <footer aria-label="team member footer" class="card__footer">
+                    <ul aria-label="team member social media" class="card__social-media">
                         <li>
-                            <a href="https://github.com/helenzhou6">
-                                <i class="fab fa-github fa-2x"></i>
+                            <a aria-label="team member github link" href="https://github.com/helenzhou6">
+                                <i alt="github link" class="fab fa-github fa-2x"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.freecodecamp.org/helenzhou6">
-                                <i class="fab fa-free-code-camp fa-2x"></i>
+                            <a aria-label="team member freecodecamp link" href="https://www.freecodecamp.org/helenzhou6">
+                                <i alt="freecodecamp link" class="fab fa-free-code-camp fa-2x"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <i class="fab fa-linkedin fa-2x"></i>
+                            <a aria-label="team member linkedin link" href="https://www.linkedin.com/">
+                                <i alt="linkedin link" class="fab fa-linkedin fa-2x"></i>
                             </a>
                         </li>
                     </ul>
                 </footer>
             </article>
+
         </div>
+
     </section>
 
-    <section aria-label="contact" id="contact" class="contact">
+    <section aria-label="site contact area" id="contact" class="contact">
+
         <div class="inner-section">
+
             <h2 class="section__title">Contact</h2>
 
             <form action="https://formspree.io/your@email.com" class="contact__form" autocomplete="on" method="post">
@@ -283,28 +285,29 @@
                     </button>
                 </div>
 
-
             </form>
 
-            <p class="section__text contact__email">
+            <p aria-label="user client email option area" class="section__text contact__email">
                 Prefer email? Shoot us
                 <a href="mailto:hello@plhh.com?subject=Enquiry&body=First name:%0D%0ALast name:%0D%0AYour email address:%0D%0AMessage:">an email (hello@plhh.com)</a> instead and include your first name, last name, message and your email address
                 :)
             </p>
+
         </div>
+
     </section>
 
-    <footer aria-label="footer" id="footer" class="footer">
+    <footer aria-label="site footer" id="footer" class="footer" role="page footer">
         
-        <section class="">
+        <section aria-label="site social media section" class="footer__links">
             <ul>
-                <li><a href="https://github.com/fac-13/plhh"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://twitter.com/PLHH"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://facebook.com/PLHH"><i class="fab fa-facebook"></i></a></li>
+                <li><a aria-label="site github link" href="https://github.com/fac-13/plhh"><i class="fab fa-github"></i></a></li>
+                <li><a aria-label="site twitter link" href="https://twitter.com/PLHH"><i class="fab fa-twitter"></i></a></li>
+                <li><a aria-label="site facebook link" href="https://facebook.com/PLHH"><i class="fab fa-facebook"></i></a></li>
             </ul>
         </section>
 
-        <section>
+        <section aria-label="site copyright section" class="footer__copyright">
             <p>&copy; PLHH <span class="js-year"></span></p>
         </section>
         
